@@ -15,7 +15,7 @@ jobs:
       - name: Test Application
         run: npm run test
   lint:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Get repository code
@@ -25,7 +25,7 @@ jobs:
       - name: Lint Application
         run: npm run lint
   build:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     needs: lint
     steps:
       - name: Get repository code
